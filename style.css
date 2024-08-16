@@ -1,0 +1,217 @@
+/* 整體容器 */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d7e5d2;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #9BA79C(0, 0, 0, 0.1);
+}
+
+/* 標題 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: monospace, Times New Roman;
+    font-size: 1.8em;
+    color: white;
+    text-shadow: 4px 4px 8px #9BA79C;
+    margin-left: 15px;
+}
+
+/* 日期 */
+#current-date {
+    font-family: monospace, Times New Roman;
+    font-size: 0.8em; 
+    color: #ffffff; 
+    font-weight: bold; 
+    text-shadow: 4px 4px 8px #9BA79C;
+    margin-right: 10px;
+}
+
+/* tab view */
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+/* tab button */
+nav button {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    background-color: #AFC2AE;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    font-family: monospace, Times New Roman;
+    font-weight: bold; 
+    font-size: 0.6em;
+}
+
+nav button.active, nav button:hover {
+    background-color: #9BA79C;
+    color: #fff;
+}
+
+/* 任務表單和列表 */
+#task-section {
+    margin-bottom: 18px;
+}
+
+#task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+/* 任務輸入框 */
+#task-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #FCF7EC;
+    margin-right: 10px;
+}
+/* Add button */
+#task-form button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #AFC2AE;
+    color: white;
+    font-family: monospace, Times New Roman;
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#task-form button:hover {
+    background-color: #9BA79C;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-family: monospace, Times New Roman;
+    font-size: 1em; 
+    color: #9BA79C; 
+    text-align: left; 
+}
+
+#task-list li .drag-handle {
+    cursor: grab;
+    margin-left: 8px;
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+#task-list li .complete-task {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#task-list li.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+/* 完成的任務 */
+#completed-tasks {
+    margin-top: 20px;
+}
+
+#completed-tasks h2 {
+    font-family: monospace, Times New Roman;
+    font-size: 1.5em;
+    text-shadow: 4px 4px 8px #9BA79C;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* 可以調整按鈕與標題之間的間距 */
+    color: white;
+    margin-left: 10px;
+}
+/* Clear button*/
+#completed-tasks button {
+    padding: 10px 20px;
+    background-color: #AFC2AE;
+    color: #fff;
+    font-family: monospace, Times New Roman;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#completed-tasks button:hover {
+    background-color: #9BA79C;
+}
+
+#completed-task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#completed-task-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #FCF7EC;
+    border-radius: 10px;
+    text-decoration: line-through;
+    color: #9BA79C;
+    font-family: monospace, Times New Roman;
+}
+
+/* radio button */
+button.complete-task {
+    background-color: transparent;
+    color: white; /* 文字顏色 */
+    border: 2px solid #9BA79C; 
+    border-radius: 50%; 
+    padding: 6px; /* 內間距縮小 */
+    cursor: pointer; /* 游標改變為手指 */
+    display: inline-flex; /* 將按鈕內的內容置中 */
+    align-items: center;
+    justify-content: center;
+    width: 20px; /* 設定寬度 */
+    height: 20px; /* 設定高度 */
+    box-shadow: none; /* 移除陰影 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 過渡效果 */
+}
+
+/* 當按鈕被點擊時的樣式 */
+button.complete-task:active {
+    background-color: #ffffff; /* 點擊時的背景色 */
+}
+
+/* 當按鈕被懸停時的樣式 */
+button.complete-task:hover {
+    background-color: #ffffff; /* 懸停時的背景色 */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 0.9em; 
+    color: #9BA79C; 
+    margin: 0;
+}

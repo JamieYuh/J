@@ -1,0 +1,21 @@
+{
+    "name": "Daily Planner for J",
+    "short_name": "J",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#AFC2AE",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "icon.jpg",
+        "sizes": "192x192",
+        "type": "image/jpg"
+      },
+      {
+        "src": "icon.jpg",
+        "sizes": "512x512",
+        "type": "image/jpg"
+      }
+    ]
+  }
+  
